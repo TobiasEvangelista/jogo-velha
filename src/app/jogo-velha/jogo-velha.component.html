@@ -1,0 +1,30 @@
+<div *ngIf="this.jogoVelhaService.status == false" style="margin-left: 425px">
+  <button (click)="iniciarJogo()">Start Game</button>
+</div>
+
+<div style="margin-left: 425px">
+  <p class="current-status">Turno: Jogador </p>
+</div>
+
+<div *ngIf="this.jogoVelhaService.status == true && this.personagemApiService" class="tabuleiro">
+
+  <div class="area-tabuleiro">
+    <div class="area-campo">
+
+
+        <div (click)="clickCampo($event)" position="0" class="campo"> </div>
+        <div (click)="clickCampo($event)" position="1" class="campo"> </div>
+        <div (click)="clickCampo($event)" position="2" class="campo"> </div>
+        <div (click)="clickCampo($event)" position="3" class="campo"> </div>
+        <div (click)="clickCampo($event)" position="4" class="campo"> </div>
+        <div (click)="clickCampo($event)" position="5" class="campo"> </div>
+        <div (click)="clickCampo($event)" position="6" class="campo"> </div>
+        <div (click)="clickCampo($event)" position="7" class="campo"> </div>
+        <div (click)="clickCampo($event)" position="8" class="campo"> </div>
+
+    </div>
+  </div>
+
+
+
+</div>

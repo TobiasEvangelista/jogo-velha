@@ -1,0 +1,52 @@
+.tabuleiro{
+  margin-left: 235px;
+  margin-top: 60px;
+  width: 400px;
+  height: 400px;
+  .area-campo {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 4fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    .player-1{
+      p{
+        color: black;
+      }
+    }
+    .player-2{
+      p{
+        color: brown;
+      }
+    }
+    .campo{
+      cursor: pointer;
+      height: 150px;
+      width: 100;
+      border: 1px solid #000000;
+      &.player-1{
+        background-image: url('../../assets/imagens/x.png');
+        background-size:138px;
+      }
+      &.player-2{
+        background-image: url('../../assets/imagens/o.png');
+        background-size:138px;
+      }
+    }
+  }
+}
+
+.Row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 10px;
+}
+.Column {
+  display: table-cell;
+
+}
+
+
+
+

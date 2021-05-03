@@ -1,0 +1,35 @@
+<div class="Row">
+  <div>
+    <form [formGroup]='jogador1' (ngSubmit)="jogador_1()" class="Column">
+      <div>
+        <label><b>Jogador 1</b></label><br>
+        <input type="text" formControlName='jogador1'>
+        <button type="submit">Submit</button>
+      </div>
+  </form>
+  <div class="card" *ngFor="let character of player1| async">
+    <img src={{character.thumbnail.path}}.{{character.thumbnail.extension}} alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>{{character.name}}</b></h4>
+    </div>
+  </div>
+  </div>
+
+  <form [formGroup]='jogador2' (ngSubmit)="jogador_2()" class="Column">
+    <div>
+      <label><b>Jogador 2</b></label><br>
+      <input type="text" formControlName='jogador2'>
+      <button type="submit">Submit</button>
+    </div>
+    <div class="card" *ngFor="let character of player2 | async">
+      <img src={{character.thumbnail.path}}.{{character.thumbnail.extension}} alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>{{character.name}}</b></h4>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+
+

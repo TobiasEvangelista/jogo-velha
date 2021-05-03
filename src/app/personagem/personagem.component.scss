@@ -1,0 +1,27 @@
+.card {
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  width: 200px;
+  height: 100px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.container img {
+  width: auto;
+  height: auto;
+
+}
+
+.Row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 10px;
+  margin-left: 0px;
+}
+.Column {
+  display: table-cell;
+}
